@@ -1,0 +1,57 @@
+---
+import { Content as HomeCookingMarkdown } from '../content/homeCooking.md';
+---
+<div class="cooking-content">
+  <HomeCookingMarkdown />
+</div>
+
+<style>
+  .cooking-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  }
+  
+  .cooking-content :global(h1) {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+  }
+  
+  .cooking-content :global(h2) {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: #111827;
+  }
+  
+  .cooking-content :global(p) {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .cooking-content :global(ul) {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .cooking-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cooking-content :global(strong) {
+    font-weight: 600;
+  }
+  
+  .cooking-content :global(a) {
+    color: #3245ff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .cooking-content :global(a:hover) {
+    color: #bc52ee;
+    text-decoration: underline;
+  }
+</style>

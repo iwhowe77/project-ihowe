@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeCookingContent from '../components/HomeCookingContent.astro';
+---
+
+<Layout>
+	<header class="header">
+		<a href="/" class="back-link">← Back to Home</a>
+		<h1>Home Cooking</h1>
+	</header>
+	<HomeCookingContent />
+</Layout>
+
+<style>
+	.header {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 1.5rem 2rem 0;
+	}
+
+	.back-link {
+		display: inline-block;
+		color: #3245ff;
+		text-decoration: none;
+		margin-bottom: 1rem;
+		transition: color 0.2s;
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+	}
+
+	.back-link:hover {
+		color: #bc52ee;
+		text-decoration: underline;
+	}
+
+	h1 {
+		margin: 0;
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		font-size: 2.5rem;
+		color: #111827;
+	}
+</style>
