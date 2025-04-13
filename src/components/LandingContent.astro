@@ -1,0 +1,40 @@
+---
+import { Content as LandingMarkdown } from '../content/landing.md';
+---
+<div class="landing-content">
+  <LandingMarkdown />
+</div>
+
+<style>
+  .landing-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  }
+  
+  .landing-content :global(h1) {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+  }
+  
+  .landing-content :global(p) {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .landing-content :global(ul) {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .landing-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .landing-content :global(strong) {
+    font-weight: 600;
+  }
+</style>
