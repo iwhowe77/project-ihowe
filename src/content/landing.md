@@ -1,12 +1,5 @@
 # I'm Ian Howe, welcome to my website!
 
-# Socials / Contact
-
-* [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
-* [Instagram](https://www.instagram.com/defnotacactus/)   
-* [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)   
-* [Discord](https://discord.com/users/iamcactus) 
-
 # Interests 
 
 - Being Curious\! Learning more about the world around me and the people in it   
@@ -17,7 +10,7 @@
 
 ## Blog post highlights
 
-* T[he dangers of walking include falling in love](https://bessstillman.substack.com/p/the-dangers-of-walking-include-falling)   
+* [The dangers of walking include falling in love](https://bessstillman.substack.com/p/the-dangers-of-walking-include-falling)   
 * [Tyler's Guide to Falling in Love with NYC](https://tyleralterman.notion.site/Tyler-s-guide-to-falling-in-love-with-NYC-dc371f0f0f284f0bab2ca74b671c80e4) 
 
 ## Podcasts 
@@ -35,18 +28,28 @@
   * Part of a 3-part series   
   * Also a [TED talk](https://www.youtube.com/watch?v=arj7oStGLkU) 
 
-Good things to know about  
+### Good things to know about  
 
-* Don't want physical junk mail? [You can opt out](https://consumer.ftc.gov/articles/how-stop-junk-mail) of a lot of it 
+* Don't want physical junk mail? [You can opt out](https://consumer.ftc.gov/articles/how-stop-junk-mail) of a lot of it - this was especially effective for me regarding credit card offers
 
-# WIP/figure out later
-
-## Personal Philosophy 
-
-* EA-adj  
-* That one Veritasium Video
+* [The MTA has a whatsapp!](https://api.whatsapp.com/send/?phone=16466286743&text=Hello,+MTA.+I+have+a+question&type=phone_number&app_absent=0) Easy opportunity to be proactive and make the subways a little bit more responsive to the chaos we often witness
 
 ## Infotainment 
 
 * Bill Wurtz \- The history of Japan
+
+
+<!-- # WIP/figure out later
+
+## Personal Philosophy 
+
+* TBD -->
+
+
+
+# Socials / Contact
+
+* [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
+* [Instagram](https://www.instagram.com/defnotacactus/)   
+* [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)
 
