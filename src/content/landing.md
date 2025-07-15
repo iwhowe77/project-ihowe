@@ -1,5 +1,13 @@
 # I'm Ian Howe!
 
+## Projects 
+- [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
+- I'm co-teaching [Get Actualized!](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c) a course on accountability, daily progression towards a project you care about 
+- [Home cooking](/homeCooking)
+- Running around events in [Fractal NYC](https://fractalnyc.com/) 
+  - Host of Merlin's Open Mic! Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
+  - 
+ 
 ## Get Accountable! 
 I love to help people stop proastinating on a problem, and get people in a social circle where everyone holds each other accountabile to help them Achieve their goals, whether it's tidying your room or publishing a book. 
 
@@ -9,14 +17,7 @@ I can offer...
 
 [Sign up here](https://forms.gle/5RHuzvKszHsoJEKo6) if you're interested!
 
-## Projects 
-- [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
-- I'm co-teaching [Get Actualized!](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c) a course on accountability, daily progression towards a project you care about 
-- [Home cooking](/homeCooking)
-- Running around events in [Fractal NYC](https://fractalnyc.com/) 
-  - Host of Merlin's Open Mic! Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
-  - 
- 
+
 ## Socials / Contact
 
 * [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
