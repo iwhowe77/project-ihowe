@@ -17,6 +17,16 @@ I can offer...
   - Host of Merlin's Open Mic! Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
   - 
  
+## Socials / Contact
+
+* [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
+* [Insta](https://www.instagram.com/defnotacactus/)   
+* [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)
+
+<br/>
+
+# Other Stuff 
+
 ## Interests 
 - Being Curious\! Learning more about the world around me and the people in it   
 - Puzzles (Jigsaw, board games, video games, etc.) 
@@ -61,10 +71,4 @@ I can offer...
 * TBD -->
 
 
-
-# Socials / Contact
-
-* [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
-* [Instagram](https://www.instagram.com/defnotacactus/)   
-* [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)
 
