@@ -1,13 +1,13 @@
 # I'm Ian Howe!
 
+
 ## Projects 
 - [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
-- I'm co-teaching [Get Actualized!](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c) a course on accountability, daily progression towards a project you care about 
-- [Home cooking](/homeCooking)
+- Hosting weekly [Forcing Function](https://partiful.com/e/nMFjyUZRaPWsFzzUVEn0) events, dm me if interested
 - Running around events in [Fractal NYC](https://fractalnyc.com/) 
-  - Host of Merlin's Open Mic! Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
-  - 
- 
+  - Host of [Merlin's Open Mic!](https://partiful.com/e/Sglp5uQUK2g8P2dGTKtR) Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
+  - Previously involved with facilitating FractalU courses w/ Ulysses - [Get Organized](https://fractalnyc.notion.site/FractalU-Spring-Semester-2025-49c328231bb642498fca307f1a7d25a9) and [Get Actualized](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c)
+
 ## Get Accountable! 
 I love to help people stop proastinating on a problem, and get people in a social circle where everyone holds each other accountabile to help them Achieve their goals, whether it's tidying your room or publishing a book. 
 
@@ -23,6 +23,7 @@ I can offer...
 * [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
 * [Insta](https://www.instagram.com/defnotacactus/)   
 * [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)
+* [Substack](https://substack.com/@ianhowe)
 
 <br/>
 
@@ -34,19 +35,19 @@ I can offer...
 
 ## Links 
 
-### Blog post highlights
+### Favorite Blog Posts
 
 * [The dangers of walking include falling in love](https://bessstillman.substack.com/p/the-dangers-of-walking-include-falling)   
 * [Tyler's Guide to Falling in Love with NYC](https://tyleralterman.notion.site/Tyler-s-guide-to-falling-in-love-with-NYC-dc371f0f0f284f0bab2ca74b671c80e4) 
 
-### Podcasts 
+<!-- ### Podcasts 
 
 * [99 Percent Invisible](https://99percentinvisible.org/episodes/)   
   * Excited for the Power Broker\!   
 * [Clearer Thinking w/ Spencer Greenberg](https://podcast.clearerthinking.org/)  
 * [NPR's Life Kit](https://open.spotify.com/show/5J0xAfsLX7bEYzGxOin4Sd?si=7d35cb475c174ff3)  
   * Wholesome, time-efficient, and designed with clear takeaways in each episode  
-  * Ex: [Take your Salads from Drab to Fab](https://open.spotify.com/episode/6awpXDXExbRzMpPYSXsDT9?si=a044ae7e2b0f429e) 
+  * Ex: [Take your Salads from Drab to Fab](https://open.spotify.com/episode/6awpXDXExbRzMpPYSXsDT9?si=a044ae7e2b0f429e)  -->
 
 ### Productivity 
 
