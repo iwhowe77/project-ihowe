@@ -1,6 +1,6 @@
 # I'm Ian Howe!
 
-[Anonymous Feedback Form](https://www.admonymous.co/ian-howe) - for anything! 
+[Anonymous Feedback Form](https://www.admonymous.co/ian-howe) - help me be a better human 
 ## Projects 
 - [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
 - Hosting weekly [Forcing Function](https://partiful.com/e/nMFjyUZRaPWsFzzUVEn0) events, dm me if interested
