@@ -1,7 +1,9 @@
 ---
+import euston from '../assets/euston.jpg';
 import { Content as LandingMarkdown } from '../content/landing.md';
 ---
 <div class="landing-content">
+  <img class="hero-image" src={euston.src} alt="Euston" />
   <LandingMarkdown />
 </div>
 
@@ -11,6 +13,16 @@ import { Content as LandingMarkdown } from '../content/landing.md';
     margin: 0 auto;
     padding: 2rem;
     font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  }
+
+  .hero-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 0 1.25rem 0;
+    object-fit: cover;
   }
   
   .landing-content :global(h1) {
@@ -37,4 +49,3 @@ import { Content as LandingMarkdown } from '../content/landing.md';
   .landing-content :global(strong) {
     font-weight: 600;
   }
-</style>
