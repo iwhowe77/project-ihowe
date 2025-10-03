@@ -1,6 +1,6 @@
 # I'm Ian Howe!
 
-
+[Anonymous Feedback Form](https://www.admonymous.co/ian-howe) - for anything! 
 ## Projects 
 - [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
 - Hosting weekly [Forcing Function](https://partiful.com/e/nMFjyUZRaPWsFzzUVEn0) events, dm me if interested
@@ -30,6 +30,7 @@ I can offer...
 # Other Stuff 
 
 ## Interests 
+- [Coliving](https://supernuclear.substack.com/) and community building, putting myself in places where I naturally bump into friends and meet new people
 - Being Curious\! Learning more about the world around me and the people in it   
 - Puzzles (Jigsaw, board games, video games, etc.) 
 
