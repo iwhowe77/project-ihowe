@@ -10,9 +10,12 @@
 
 ## Get Accountable!
 
-<div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1.25rem; max-width: 450px; background: #fff;">
-  <p style="margin: 0 0 0.75rem 0; font-size: 1rem; color: #111827;"><strong>If I don't do pushups, I get charged money!</strong></p>
-  <iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="265" width="100%" frameborder="0" style="border: none; border-radius: 8px;"></iframe>
+<div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1.25rem 1.25rem 0; max-width: 550px; background: #fff; overflow: hidden;">
+  <p style="margin: 0 0 0.75rem 0; font-size: 1.1rem; color: #111827;"><strong>If I don't do pushups, I get charged money!</strong></p>
+  <div style="width: 230px; height: 245px; transform: scale(2); transform-origin: top left; margin-bottom: -245px;">
+    <iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="245" width="230" frameborder="0" style="border: none;"></iframe>
+  </div>
+  <div style="height: 450px;"></div>
 </div>
 
 ## Socials / Contact
