@@ -1,6 +1,6 @@
 # I'm Ian Howe!
 
-[Anonymous Feedback Form](https://www.admonymous.co/ianhowe) - help me be a better human 
+[Anonymous Feedback](https://www.admonymous.co/ianhowe) - help me be a better human 
 ## Projects 
 - [I turned my apartment building into a neighborhood community](https://ianhowe.substack.com/p/community-without-the-commute)
 - Hosting weekly [Forcing Function](https://partiful.com/e/nMFjyUZRaPWsFzzUVEn0) events, dm me if interested
@@ -8,16 +8,9 @@
   - Host of [Merlin's Open Mic!](https://partiful.com/e/Sglp5uQUK2g8P2dGTKtR) Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
   - Previously involved with facilitating FractalU courses w/ Ulysses - [Get Organized](https://fractalnyc.notion.site/FractalU-Spring-Semester-2025-49c328231bb642498fca307f1a7d25a9) and [Get Actualized](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c)
 
-<!-- 
-## Get Accountable! 
-I love to help people stop proastinating on a problem, and get people in a social circle where everyone holds each other accountabile to help them Achieve their goals, whether it's tidying your room or publishing a book. 
+## Get Accountable!
 
-I can offer...
-- Meeting you 1on1 
-- Inviting you into a circle of like-minded people
-
-[Sign up here](https://forms.gle/5RHuzvKszHsoJEKo6) if you're interested!
- -->
+<iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe>
 
 ## Socials / Contact
 
