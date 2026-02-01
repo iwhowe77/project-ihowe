@@ -8,13 +8,12 @@
   - Host of [Merlin's Open Mic!](https://partiful.com/e/Sglp5uQUK2g8P2dGTKtR) Give me your songs, your stories, your traffic cone digeridoos yearning to breathe free - DM me for details
   - Previously involved with facilitating FractalU courses w/ Ulysses - [Get Organized](https://fractalnyc.notion.site/FractalU-Spring-Semester-2025-49c328231bb642498fca307f1a7d25a9) and [Get Actualized](https://www.notion.so/ulyart/Get-Actualized-class-resources-18529d498c83806cb79dd2c49d3f394c)
 
-## Get Accountable!
+## if I don't do pushups, I get charged $$
 
-<div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1.25rem 1.25rem 0; max-width: 550px; background: #fff; overflow: hidden;">
-  <p style="margin: 0 0 0.75rem 0; font-size: 1.1rem; color: #111827;"><strong>If I don't do pushups, I get charged money!</strong></p>
   <div style="width: 230px; height: 245px; transform: scale(2); transform-origin: top left; margin-bottom: -245px;">
     <iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="245" width="230" frameborder="0" style="border: none;"></iframe>
   </div>
+
   <div style="height: 450px;"></div>
 </div>
 
