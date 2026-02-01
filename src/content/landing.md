@@ -10,7 +10,10 @@
 
 ## Get Accountable!
 
-<iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe>
+<div style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 1.25rem; max-width: 450px; background: #fff;">
+  <p style="margin: 0 0 0.75rem 0; font-size: 1rem; color: #111827;"><strong>If I don't do pushups, I get charged money!</strong></p>
+  <iframe src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true" height="265" width="100%" frameborder="0" style="border: none; border-radius: 8px;"></iframe>
+</div>
 
 ## Socials / Contact
 
