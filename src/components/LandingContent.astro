@@ -9,12 +9,10 @@ import SocialLinks from './SocialLinks.astro';
   <SocialLinks />
   <LandingMarkdown />
 
-  <details class="other-stuff">
-    <summary>Other Stuff</summary>
-    <div class="other-stuff-content">
-      <OtherStuffMarkdown />
-    </div>
-  </details>
+  <div class="other-stuff">
+    <h2>Other Stuff</h2>
+    <OtherStuffMarkdown />
+  </div>
 
   <div class="beeminder-section">
     <h2>if I don't do pushups, I get charged $$</h2>
@@ -111,7 +109,7 @@ import SocialLinks from './SocialLinks.astro';
     color: #bc52ee;
   }
 
-  /* --- Other Stuff accordion --- */
+  /* --- Other Stuff --- */
 
   .other-stuff {
     margin-top: 2.5rem;
@@ -119,37 +117,13 @@ import SocialLinks from './SocialLinks.astro';
     padding-top: 1.5rem;
   }
 
-  .other-stuff > summary {
+  .other-stuff h2 {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #111827;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    user-select: none;
-  }
-
-  .other-stuff > summary::after {
-    content: '›';
-    font-size: 1.4rem;
-    color: #9ca3af;
-    transition: transform 0.2s;
-    display: inline-block;
-  }
-
-  .other-stuff[open] > summary::after {
-    transform: rotate(90deg);
-  }
-
-  .other-stuff > summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .other-stuff-content {
-    padding-top: 0.5rem;
+    border-bottom: none;
+    margin-top: 0;
   }
 
   /* --- Beeminder section --- */
