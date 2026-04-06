@@ -1,5 +1,7 @@
 # I'm Ian Howe!
 
+By day I'm a software engineer, by night I'm wandering Brooklyn in search of zany events or going full improv in my kitchen. I'm interested in social accountability, befriending my neighbors, and skipping the small talk
+
 [Anonymous Feedback](https://www.admonymous.co/ianhowe) - help me be a better human 
 
 ## Projects 
