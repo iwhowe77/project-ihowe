@@ -11,11 +11,13 @@
 * [The dangers of walking include falling in love](https://bessstillman.substack.com/p/the-dangers-of-walking-include-falling)   
 * [Tyler's Guide to Falling in Love with NYC](https://tyleralterman.notion.site/Tyler-s-guide-to-falling-in-love-with-NYC-dc371f0f0f284f0bab2ca74b671c80e4)
 
-### Productivity 
+<!-- ### Productivity 
 
 * [Why Procrastinators Procrastinate — Wait But Why](https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html)  
   * Part of a 3-part series   
   * Also a [TED talk](https://www.youtube.com/watch?v=arj7oStGLkU) 
+
+-->
 
 ### Good things to know about  
 
