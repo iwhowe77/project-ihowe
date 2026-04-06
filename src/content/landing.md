@@ -17,15 +17,6 @@
   <div style="height: 450px;"></div>
 </div>
 
-## Socials / Contact
-
-* [iwhowe77@gmail.com](mailto:iwhowe77@gmail.com)   
-* [Insta](https://www.instagram.com/defnotacactus/)   
-* [LinkedIn](https://www.linkedin.com/in/ian-howe-softeng/)
-* [Substack](https://substack.com/@ianhowe)
-
-<br/>
-
 # Other Stuff 
 
 ## Interests 
