@@ -3,11 +3,28 @@ import euston from '../assets/euston.jpg';
 import { Content as LandingMarkdown } from '../content/landing.md';
 import { Content as OtherStuffMarkdown } from '../content/other-stuff.md';
 import SocialLinks from './SocialLinks.astro';
+import PostList from './substack/PostList.astro';
+import { getPosts, SUBSTACK_URL } from '../lib/substack';
+
+const posts = await getPosts(5);
 ---
 <div class="landing-content">
   <img class="hero-image" src={euston.src} alt="Euston" />
   <SocialLinks />
   <LandingMarkdown />
+
+  <div class="writing">
+    <h2>Writing</h2>
+    <PostList posts={posts} />
+    <a
+      class="all-posts"
+      href={`${SUBSTACK_URL}/archive`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      See all posts on Substack →
+    </a>
+  </div>
 
   <div class="other-stuff">
     <h2>Other Stuff</h2>
@@ -107,6 +124,25 @@ import SocialLinks from './SocialLinks.astro';
 
   .landing-content :global(a:hover) {
     color: #bc52ee;
+  }
+
+  /* --- Writing --- */
+
+  /* The markdown list styles above also match the post list, which pulls it
+     out of alignment with the rest of the section. */
+  .writing :global(ul.post-list) {
+    padding-left: 0;
+  }
+
+  .writing :global(ul.post-list li) {
+    margin-bottom: 0;
+  }
+
+  .all-posts {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-size: 0.875rem;
+    font-weight: 600;
   }
 
   /* --- Other Stuff --- */
