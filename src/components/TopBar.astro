@@ -1,0 +1,86 @@
+---
+// Site-wide top bar. Links to pages that don't exist yet (e.g. /now, /offers)
+// are hidden automatically, so this works whichever page PRs merge first.
+const pages = Object.keys(import.meta.glob('../pages/**/*.astro'));
+const hasPage = (name: string) => pages.some((p) => p.endsWith(`/pages/${name}.astro`));
+
+const links = [
+  { label: 'Intro', href: '/' },
+  { label: 'Now', href: '/now', page: 'now' },
+  { label: 'Offers & asks', href: '/offers', page: 'offers' },
+  { label: 'Contact', href: 'mailto:iwhowe77@gmail.com' },
+  // TODO(Ian): pick what "accountability" should point to. Defaulting to the
+  // anonymous feedback form that's already on the landing page.
+  { label: 'Accountability', href: 'https://www.admonymous.co/ianhowe', external: true },
+].filter((l) => !l.page || hasPage(l.page));
+
+const current = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<header class="top-bar">
+  <nav class="top-bar-inner" aria-label="Main">
+    <a href="/" class="name">Ian Howe</a>
+    <ul>
+      {links.map((l) => (
+        <li>
+          <a
+            href={l.href}
+            aria-current={l.href === current ? 'page' : undefined}
+            target={l.external ? '_blank' : undefined}
+            rel={l.external ? 'noopener noreferrer' : undefined}
+          >
+            {l.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .top-bar {
+    border-bottom: 1px solid #f3f4f6;
+    background-color: #f9fafb;
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  }
+
+  .top-bar-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.85rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .name {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #111827;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  ul a:hover,
+  ul a[aria-current='page'] {
+    color: #3245ff;
+  }
+</style>

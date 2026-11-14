@@ -3,9 +3,11 @@ import euston from '../assets/euston.jpg';
 import { Content as LandingMarkdown } from '../content/landing.md';
 import { Content as OtherStuffMarkdown } from '../content/other-stuff.md';
 import SocialLinks from './SocialLinks.astro';
+import Avatar from './Avatar.astro';
 ---
 <div class="landing-content">
   <img class="hero-image" src={euston.src} alt="Euston" />
+  <Avatar />
   <SocialLinks />
   <LandingMarkdown />
 
