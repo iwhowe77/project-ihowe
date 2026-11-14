@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Content as NowMarkdown } from '../content/now.md';
+---
+
+<Layout>
+	<header class="header">
+		<a href="/" class="back-link">← Back to Home</a>
+		<h1>Now</h1>
+	</header>
+	<div class="now-content">
+		<NowMarkdown />
+	</div>
+</Layout>
+
+<style>
+	.header {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 1.5rem 2rem 0;
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+	}
+
+	.back-link {
+		display: inline-block;
+		color: #3245ff;
+		text-decoration: none;
+		margin-bottom: 1rem;
+		transition: color 0.2s;
+	}
+
+	.back-link:hover {
+		color: #bc52ee;
+		text-decoration: underline;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 2.5rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		color: #111827;
+	}
+
+	.now-content {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 1rem 2rem 2rem;
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		line-height: 1.7;
+		color: #4b5563;
+	}
+
+	.now-content :global(h2) {
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: #1f2937;
+		margin-top: 2.25rem;
+		margin-bottom: 0.75rem;
+		padding-bottom: 0.4rem;
+		border-bottom: 1px solid #f3f4f6;
+	}
+
+	.now-content :global(a) {
+		color: #3245ff;
+		text-decoration: none;
+		transition: color 0.15s;
+	}
+
+	.now-content :global(a:hover) {
+		color: #bc52ee;
+	}
+</style>
