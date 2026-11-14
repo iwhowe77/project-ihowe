@@ -1,0 +1,40 @@
+---
+// Photo slot. TODO(Ian): drop a photo of your face at src/assets/ian.jpg
+// (or .png / .webp) and it shows up here. Until then, a placeholder renders.
+const photos = import.meta.glob<{ default: ImageMetadata }>('../assets/ian.{jpg,jpeg,png,webp}', { eager: true });
+const photo = Object.values(photos)[0]?.default;
+---
+
+{photo ? (
+  <img class="avatar" src={photo.src} alt="Ian Howe" width="112" height="112" />
+) : (
+  <div class="avatar avatar-placeholder" aria-hidden="true">
+    <span>TODO(Ian):<br />your photo</span>
+  </div>
+)}
+
+<style>
+  .avatar {
+    display: block;
+    width: 112px;
+    height: 112px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin: -3.5rem 0 1rem 1.25rem;
+    position: relative;
+    border: 4px solid #f9fafb;
+  }
+
+  .avatar-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f3f4f6;
+    border: 2px dashed #d1d5db;
+    outline: 4px solid #f9fafb;
+    color: #6b7280;
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+</style>
