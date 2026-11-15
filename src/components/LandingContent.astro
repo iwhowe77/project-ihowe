@@ -13,19 +13,6 @@ import SocialLinks from './SocialLinks.astro';
     <h2>Other Stuff</h2>
     <OtherStuffMarkdown />
   </div>
-
-  <div class="beeminder-section">
-    <h2>if I don't do pushups, I get charged $$</h2>
-    <div class="beeminder-wrapper">
-      <iframe
-        src="https://www.beeminder.com/widget?slug=exercise&username=iwhowe77&countdown=true"
-        height="245"
-        width="230"
-        frameborder="0"
-        style="border: none; transform: scale(2); transform-origin: top left; display: block;"
-      ></iframe>
-    </div>
-  </div>
 </div>
 
 <style>
@@ -124,29 +111,5 @@ import SocialLinks from './SocialLinks.astro';
     color: #111827;
     border-bottom: none;
     margin-top: 0;
-  }
-
-  /* --- Beeminder section --- */
-
-  .beeminder-section {
-    margin-top: 2.5rem;
-    border-top: 1px solid #f3f4f6;
-    padding-top: 1.5rem;
-  }
-
-  .beeminder-section h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid #f3f4f6;
-  }
-
-  .beeminder-wrapper {
-    overflow: hidden;
-    width: 460px;
-    height: 490px;
-    max-width: 100%;
   }
 </style>
