@@ -35,24 +35,25 @@ jobs:
   screenshots:
     # Fork PRs get a read-only token, so skip them.
     if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-latest
+    # Pinned: Playwright 1.55 has no browser build for ubuntu-latest (26.04) yet.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       PR: ${{ github.event.pull_request.number || inputs.pr }}
       SHOTS: ${{ github.workspace }}/shots
     steps:
       # The harness (this workflow's own copy of the script)...
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: harness
       # ...and the PR's site, which may predate the harness.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           path: site
           ref: ${{ github.event_name == 'workflow_dispatch' && format('refs/pull/{0}/head', inputs.pr) || github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
@@ -97,7 +98,7 @@ jobs:
           echo "SHOTS_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
 
       - name: Post or update the PR comment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');
