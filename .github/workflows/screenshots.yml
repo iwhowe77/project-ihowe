@@ -1,0 +1,145 @@
+# Posts desktop + mobile screenshots of every page as one comment on each PR,
+# so a PR can be checked from a phone without opening the preview.
+#
+# How it works:
+# - Builds the PR's site here (same `npm run build` Cloudflare runs) and screenshots
+#   it with scripts/screenshots.mjs. Building locally avoids racing Cloudflare's deploy.
+# - Commits the PNGs to the `pr-screenshots` branch (never merged; safe to delete any
+#   time) so the comment can show them inline. Commits carry [CF-Pages-Skip] so
+#   Cloudflare doesn't try to deploy that branch.
+# - Links the Cloudflare preview in the comment once its check run reports a URL.
+#
+# Re-run for an older PR: Actions > PR screenshots > Run workflow > enter the PR number.
+
+name: PR screenshots
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: PR number to screenshot
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+
+concurrency:
+  group: screenshots-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  screenshots:
+    # Fork PRs get a read-only token, so skip them.
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PR: ${{ github.event.pull_request.number || inputs.pr }}
+      SHOTS: ${{ github.workspace }}/shots
+    steps:
+      # The harness (this workflow's own copy of the script)...
+      - uses: actions/checkout@v4
+        with:
+          path: harness
+      # ...and the PR's site, which may predate the harness.
+      - uses: actions/checkout@v4
+        with:
+          path: site
+          ref: ${{ github.event_name == 'workflow_dispatch' && format('refs/pull/{0}/head', inputs.pr) || github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        working-directory: harness
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Build and screenshot the PR's site
+        working-directory: site
+        env:
+          SCREENSHOT_DIR: ${{ env.SHOTS }}
+        run: |
+          npm ci
+          node ../harness/scripts/screenshots.mjs
+          echo "SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Publish images to the pr-screenshots branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir branch && cd branch
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git fetch -q --depth 1 origin pr-screenshots; then
+            git checkout -q -b pr-screenshots FETCH_HEAD
+          else
+            git checkout -q --orphan pr-screenshots
+          fi
+          dest="pr-${PR}/${SHA}"
+          mkdir -p "$dest"
+          cp "$SHOTS"/*.png "$dest/"
+          git add -A
+          git commit -q -m "Screenshots for PR #${PR} at ${SHA::7} [CF-Pages-Skip]"
+          for i in 1 2 3; do
+            git push -q origin HEAD:pr-screenshots && break
+            git pull -q --rebase --depth 1 origin pr-screenshots
+          done
+          echo "SHOTS_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Post or update the PR comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const { owner, repo } = context.repo;
+            const pr = Number(process.env.PR);
+            const sha = process.env.SHA;
+            const shots = JSON.parse(fs.readFileSync(`${process.env.SHOTS}/manifest.json`, 'utf8'));
+            const raw = (file) =>
+              `https://raw.githubusercontent.com/${owner}/${repo}/${process.env.SHOTS_COMMIT}/pr-${pr}/${sha}/${file.split('/').pop()}`;
+
+            // Wait up to ~5 minutes for Cloudflare to report the preview URL.
+            let preview = null;
+            for (let i = 0; i < 20 && !preview; i++) {
+              const { data } = await github.rest.checks.listForRef({ owner, repo, ref: sha });
+              const cf = data.check_runs.find((r) => r.name === 'Cloudflare Pages' && r.status === 'completed');
+              const summary = cf?.output?.summary || '';
+              const m = summary.match(/Branch Preview URL[\s\S]*?href='(https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.pages\.dev)'/i)
+                || summary.match(/Preview URL[\s\S]*?href='(https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.pages\.dev)'/i);
+              if (m) preview = m[1];
+              else await new Promise((r) => setTimeout(r, 15000));
+            }
+
+            const pages = [...new Set(shots.map((s) => s.path))];
+            const img = (path, viewport, width) => {
+              const s = shots.find((x) => x.path === path && x.viewport === viewport);
+              return s ? `<a href="${raw(s.file)}"><img src="${raw(s.file)}" width="${width}" alt="${path} ${viewport}"></a>` : '';
+            };
+            const sections = pages.map((path) => {
+              const link = preview ? ` ([open](${preview}${path}))` : '';
+              return `### \`${path}\`${link}\n\n${img(path, 'mobile', 240)} ${img(path, 'desktop', 480)}`;
+            });
+
+            const marker = '<!-- pr-screenshots -->';
+            const body = [
+              marker,
+              `## Screenshots at ${sha.slice(0, 7)}`,
+              preview ? `Preview: ${preview}` : 'Cloudflare preview link not found yet.',
+              'Mobile (390px) on the left, desktop (1280px) on the right. Tap an image for full size.',
+              ...sections,
+            ].join('\n\n');
+
+            const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number: pr });
+            const existing = comments.find((c) => c.user.type === 'Bot' && c.body.includes(marker));
+            if (existing) await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            else await github.rest.issues.createComment({ owner, repo, issue_number: pr, body });
