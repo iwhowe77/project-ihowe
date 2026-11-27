@@ -1,0 +1,30 @@
+# Ian's reading list. This file is the source of truth for /reading.
+#
+# Newest first. Each entry:
+#   - id:       short unique slug (any text, just has to be unique)
+#     title:    what it's called
+#     url:      link to it
+#     author:   person or publication, shown under the title
+#     finished: true    (optional; shows a check mark)
+#     note:     "..."   (optional; one line in your own words)
+#     added:    2026-11-27  (optional; not shown, just for your own record)
+#
+# Only things you'd actually recommend go here. Substack likes stay out.
+
+- id: how-to-be-more-agentic
+  title: How to Be More Agentic
+  url: https://usefulfictions.substack.com/p/how-to-be-more-agentic
+  author: Useful Fictions
+  finished: true
+
+- id: dangers-of-walking
+  title: The Dangers of Walking Include Falling in Love
+  url: https://bessstillman.substack.com/p/the-dangers-of-walking-include-falling
+  author: Bess Stillman
+  finished: true
+
+- id: tylers-guide-to-nyc
+  title: Tyler's Guide to Falling in Love with NYC
+  url: https://tyleralterman.notion.site/Tyler-s-guide-to-falling-in-love-with-NYC-dc371f0f0f284f0bab2ca74b671c80e4
+  author: Tyler Alterman
+  finished: true
