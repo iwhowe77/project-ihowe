@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>probe</title>
+<pre id="out">running...</pre>
+<script>
+fetch('https://substack.com/api/v1/reader/feed/profile/111934112')
+  .then(r => r.text().then(t => 'client status ' + r.status + ' len ' + t.length))
+  .catch(e => 'client fetch failed: ' + e)
+  .then(s => document.getElementById('out').textContent = s);
+</script>
